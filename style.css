@@ -1,0 +1,153 @@
+
+.mainBanner{
+    background-image: url(images/banner/banner1.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannerTitle {
+    font-size: 60px;
+    font-weight: 1000;
+    color:rgb(224, 145, 41);
+}
+.bannerBlackOverlay {
+    min-height: 100vh;
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: o.1;
+}
+.client{
+    background-color:rgb(238, 181, 106);
+}
+
+  .mt-n1 {
+    margin-top: -1.14rem;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  
+}
+.client-block{
+    height: 185px;
+    width: 209px;
+    background-color: rgb(55, 59, 52);
+    display: inline-block;
+    margin: 5px;
+}
+.client-block img{
+    width: 160px;
+    height: 120px;
+    margin-top: 32px;
+
+}
+/* form */
+.form-fill{
+    width: 70%;
+    border: 2px solid black;
+   margin-left: 160px;
+}
+/* price-list */
+  .Price-menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.price{
+    
+    width: 500px;
+
+}
+
+ul{
+    margin-left: 170px;
+}
+
+.img-height{
+    height: 550px;
+}
+footer{
+    background-color: rgb(62, 62, 62);
+    color: white;
+}
+/* service */
+.Private{
+    background-color:#F4CD78;
+    height: 350px;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.Birthday{
+    background-image: url(images/service/Birthday.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.wedding{
+    background-image: url(images/service/wedding.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.family{
+    background-image: url(images/service/family.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conference{
+    background-image: url(images/service/conference.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.small{
+    background-image: url(images/service/social.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cafe{
+    background-image: url(images/service/cafe.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.service-item{
+    height: 570px;
+    width: 520px;
+    background-color: antiquewhite;  
+ /* margin-left: auto;
+ margin-right: 30px; */
+ opacity: 0.8;
+}

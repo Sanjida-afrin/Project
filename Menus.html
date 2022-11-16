@@ -10,43 +10,68 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.menu-head{
+  background-color: #F4CD78;
+  color: #0F434C;
+}
+.card-body{
+  background: #ece9e3;
+}
+tr{
+  border-color: rgb(199, 204, 204);
+  border-spacing: 0px 45px;
+}
+.table{
+border-collapse:separate;
+}
+  </style>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top fixed-top">
+      <div class="container">
+        <button class="navbar-toggler me-5 pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse nav-bar" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Hidden brand</a>
-          <ul class="navbar-nav me-auto mb-lg-0">
+        <div class="collapse navbar-collapse nav-bar justify-content-evenly" id="navbarTogglerDemo01">
+          <a class="navbar-brand logo" href="#">Sanjida's Catering</a>
+          <ul class="navbar-nav mb-lg-0 me-5">
               <a class="navbar-brand px-3" href="index.html">HOME</a>
               <a class="navbar-brand px-3" href="Services.html">SERVICES</a>
               <a class="navbar-brand px-3" href="Menus.html">MENUS</a>
               <a class="navbar-brand px-3" href="Price_list.html">PRICE LIST</a>
               <a class="navbar-brand px-3" href="FAQ.html">FAQ</a>
-              <a class="navbar-brand px-3" href="Blog.html">BLOG</a>
+              <a class="navbar-brand px-3" href="Blog.html">SHOP</a>
+              <a href="form.html"><button class="navbar-brand btn btn-outline-success" type="submit">GET IN TOUCH</button></a>
           </ul>
-          <button class="btn btn-outline-success" type="submit"> <a href="form.html">GET IN TOUCH</a></button>
+         
         </div>
       </div>
     </nav>
-    <div class="mainBanner">
+    <div class="slide-1">
       <div class="bannerBlackOverlay">
-        <h2 class="bannerTitle text-center">BEST QUALITY PRODUCTS</h2>
-        <p class="my-3"><a href="/products"><button type="button" class="btn btn-warning bannerBtn"> Explore
-              All</button></a></p>
+          <div class="bannerTitle">
+            <h2 class=" text-center">BEST QUALITY PRODUCTS</h2>
+            <p class="my-3"><a href="/products"><button type="button" class="btn btn-warning bannerBtn"> Explore
+                        All</button></a></p>
+          </div>
       </div>
-    </div>
+  </div>
   </header>
   <main>
     <section>
       <div class="menu">
         <div class="m-2 row row-cols-1 g-4">
-          <div class="card text-center col">
-            <div class="card-header">
+          <div class="card text-center p-0">
+            <div class="card-header menu-head">
               <h4>Menu One</h4>
               <p>min order qty: 20</p>
             </div>
@@ -57,39 +82,39 @@
     
               <table class="table">
                 <tbody>
-                  <tr>
+               <tr>
                     <td>Shahi Polao / MotorShuti Polao</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Chicken Roast / Tandoori Chicken</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Mutton Rezala</td>
                   </tr>
                  
-                  <tr>
+               <tr>
                     <td>Prawn MalaiKari / DoPiaza</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Jali Kabab (Beef / Chicken)</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Jorda / Firni</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Borhani</td>
                   </tr>
                 </tbody>
               </table>
-              <a href="#" class="btn btn-primary">
+              <a href="#" class="btn btn-success">
                 ORDER NOW</a>
             </div>
     
           </div>
       </div>
       <div class="m-2 row row-cols-1 g-4">
-        <div class="card text-center col">
-          <div class="card-header">
+        <div class="card text-center p-0">
+          <div class="card-header menu-head">
             <h4>Menu Two</h4>
             <p>min order qty: 20</p>
           </div>
@@ -100,41 +125,41 @@
             <p>per person</p>
             <table class="table">
               <tbody>
-                <tr>
+             <tr>
                   <td>Plain Polao / Bhuna Khichuri
                   </td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Chicken Roast / Tandoori Chicken</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Beef Rezala / Bhuna
                   </td>
                 </tr>
                
-                <tr>
+             <tr>
                   <td>Prawn MalaiKari / DoPiaza</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Shami Kabab (Beef / Chicken)</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Jorda / Firni</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Borhani</td>
                 </tr>
               </tbody>
             </table>
-            <a href="#" class="btn btn-primary">
+            <a href="#" class="btn btn-success">
               ORDER NOW</a>
           </div>
   
         </div>
     </div>
     <div class="m-2 row row-cols-1 g-4">
-      <div class="card text-center col">
-        <div class="card-header">
+      <div class="card text-center p-0">
+        <div class="card-header menu-head">
           <h4>Menu Three</h4>
           <p>min order qty: 20</p>
         </div>
@@ -145,39 +170,39 @@
           <p>per person</p>
           <table class="table">
             <tbody>
-              <tr>
+           <tr>
                 <td>Shahi Polao / MotorShuti Polao</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Chicken Roast / Tandoori Chicken</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Beef Rezala / Bhuna</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Duck Meat Bhuna</td>
               </tr>
              
-              <tr>
+           <tr>
                 <td>Jali Kabab (Beef / Chicken)</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Jorda / Firni</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Borhani</td>
               </tr>
             </tbody>
           </table>
-          <a href="#" class="btn btn-primary">
+          <a href="#" class="btn btn-success">
             ORDER NOW</a>
         </div>
 
       </div>
   </div>
   <div class="m-2 row row-cols-1 g-4">
-    <div class="card text-center col">
-      <div class="card-header">
+    <div class="card text-center p-0">
+      <div class="card-header menu-head">
         <h4>Menu One</h4>
         <p>min order qty: 20</p>
       </div>
@@ -189,35 +214,35 @@
 
         <table class="table">
           <tbody>
-            <tr>
+         <tr>
               <td>Morog Polao</td>
             </tr>
-            <tr>
+         <tr>
               <td>Beef Rezala / Bhuna</td>
             </tr>
-            <tr>
+         <tr>
               <td>Prawn MalaiKari / DoPiaza</td>
             </tr>
-            <tr>
+         <tr>
               <td>Shami Kabab (Beef / Chicken)</td>
             </tr>
-            <tr>
+         <tr>
               <td>Jorda / Firni</td>
             </tr>
-            <tr>
+         <tr>
               <td>Borhani</td>
             </tr>
           </tbody>
         </table>
-        <a href="#" class="btn btn-primary">
+        <a href="#" class="btn btn-success">
           ORDER NOW</a>
       </div>
 
     </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-  <div class="card text-center col">
-    <div class="card-header">
+  <div class="card text-center p-0">
+    <div class="card-header menu-head">
       <h4>Menu Five</h4>
       <p>min order qty: 20</p>
     </div>
@@ -228,35 +253,35 @@
       <p>per person</p>
       <table class="table">
         <tbody>
-          <tr>
+       <tr>
             <td>Shahi Polao / MotorShuti Polao</td>
           </tr>
-          <tr>
+       <tr>
             <td>Chicken Roast / Tandoori Chicken</td>
           </tr>
-          <tr>
+       <tr>
             <td>Dim Korma</td>
           </tr>
-          <tr>
+       <tr>
             <td>Jali Kabab (Beef / Chicken)</td>
           </tr>
-          <tr>
+       <tr>
             <td>Jorda / Firni</td>
           </tr>
-          <tr>
+       <tr>
             <td>Borhani</td>
           </tr>
         </tbody>
       </table>
-      <a href="#" class="btn btn-primary">
+      <a href="#" class="btn btn-success">
         ORDER NOW</a>
     </div>
 
   </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-<div class="card text-center col">
-  <div class="card-header">
+<div class="card text-center p-0">
+  <div class="card-header menu-head">
     <h4>Menu Six</h4>
     <p>min order qty: 20</p>
   </div>
@@ -267,36 +292,36 @@
     <p>per person</p>
     <table class="table">
       <tbody>
-        <tr>
+     <tr>
           <td>Kacchi Biryani (Chinigura)
           </td>
         </tr>
-        <tr>
+     <tr>
           <td>Chicken Roast / Tandoori Chicken</td>
         </tr>
-        <tr>
+     <tr>
           <td>Dim Korma</td>
         </tr>
           <td>Shami Kabab (Beef / Chicken)
           </td>
         </tr>
-        <tr>
+     <tr>
           <td>Jorda / Firni</td>
         </tr>
-        <tr>
+     <tr>
           <td>Borhani</td>
         </tr>
       </tbody>
     </table>
-    <a href="#" class="btn btn-primary">
+    <a href="#" class="btn btn-success">
       ORDER NOW</a>
   </div>
 
 </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-  <div class="card text-center col">
-    <div class="card-header">
+  <div class="card text-center p-0">
+    <div class="card-header menu-head">
       <h4>Menu Seven</h4>
       <p>min order qty: 20</p>
     </div>
@@ -308,35 +333,35 @@
 
       <table class="table">
         <tbody>
-          <tr>
+       <tr>
             <td>Beef Bhuna Khichuri (Regular)</td>
           </tr>
-          <tr>
+       <tr>
             <td>Chicken Roast / Tandoori Chicken</td>
           </tr>
-          <tr>
+       <tr>
             <td>Rui Fry / DoPiaza</td>
           </tr>
-          <tr>
+       <tr>
             <td>Jali Kabab (Beef / Chicken)</td>
           </tr>
-          <tr>
+       <tr>
             <td>Jorda / Firni</td>
           </tr>
-          <tr>
+       <tr>
             <td>Borhani</td>
           </tr>
         </tbody>
       </table>
-      <a href="#" class="btn btn-primary">
+      <a href="#" class="btn btn-success">
         ORDER NOW</a>
     </div>
 
   </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-<div class="card text-center col">
-  <div class="card-header">
+<div class="card text-center p-0">
+  <div class="card-header menu-head">
     <h4>Menu Eight</h4>
     <p>min order qty: 20</p>
   </div>
@@ -347,36 +372,36 @@
     <p>per person</p>
     <table class="table">
       <tbody>
-        <tr>
+     <tr>
           <td>Special Beef Tehari</td>
         </tr>
-        <tr>
+     <tr>
           <td>Chicken Roast / Tandoori Chicken</td>
         </tr>
-        <tr>
+     <tr>
           <td>Vegetable Malai Curry
           </td>
         </tr>
-        <tr>
+     <tr>
           <td>Jali Kabab (Beef / Chicken)</td>
         </tr>
-        <tr>
+     <tr>
           <td>Jorda / Firni</td>
         </tr>
-        <tr>
+     <tr>
           <td>Borhani</td>
         </tr>
       </tbody>
     </table>
-    <a href="#" class="btn btn-primary">
+    <a href="#" class="btn btn-success">
       ORDER NOW</a>
   </div>
 
 </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-<div class="card text-center col">
-<div class="card-header">
+<div class="card text-center p-0">
+<div class="card-header menu-head">
   <h4>Menu Nine</h4>
   <p>min order qty: 20</p>
 </div>
@@ -387,35 +412,35 @@
   <p>per person</p>
   <table class="table">
     <tbody>
-      <tr>
+   <tr>
         <td>Regular Beef Tehari</td>
       </tr>
-      <tr>
+   <tr>
         <td>Chicken Roast / Tandoori Chicken</td>
       </tr>
-      <tr>
+   <tr>
         <td>Vegetable Malai Curry</td>
       </tr>
-      <tr>
+   <tr>
         <td>Shami Kabab (Beef / Chicken)</td>
       </tr>
-      <tr>
+   <tr>
         <td>Jorda / Firni</td>
       </tr>
-      <tr>
+   <tr>
         <td>Borhani</td>
       </tr>
     </tbody>
   </table>
-  <a href="#" class="btn btn-primary">
+  <a href="#" class="btn btn-success">
     ORDER NOW</a>
 </div>
 
 </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-  <div class="card text-center col">
-    <div class="card-header">
+  <div class="card text-center p-0">
+    <div class="card-header menu-head">
       <h4>Menu Ten
       </h4>
       <p>min order qty: 20</p>
@@ -428,32 +453,32 @@
 
       <table class="table">
         <tbody>
-          <tr>
+       <tr>
             <td>White Rice (Basmati)</td>
           </tr>
-          <tr>
+       <tr>
             <td>Chicken (Pakistani) Rezala</td>
           </tr>
-          <tr>
+       <tr>
             <td>RupChanda Fry / DoPiaza</td>
           </tr>
-          <tr>
+       <tr>
             <td>Mixed Vegetable</td>
           </tr>
-          <tr>
+       <tr>
             <td>Ghono Daal</td>
           </tr>
         </tbody>
       </table>
-      <a href="#" class="btn btn-primary">
+      <a href="#" class="btn btn-success">
         ORDER NOW</a>
     </div>
 
   </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-<div class="card text-center col">
-  <div class="card-header">
+<div class="card text-center p-0">
+  <div class="card-header menu-head">
     <h4>Menu Eleven</h4>
     <p>min order qty: 20</p>
   </div>
@@ -464,32 +489,32 @@
     <p>per person</p>
     <table class="table">
       <tbody>
-        <tr>
+     <tr>
           <td>Bhuna Khichuri</td>
         </tr>
-        <tr>
+     <tr>
           <td>Chicken Roast / Tandoori Chicken</td>
         </tr>
-        <tr>
+     <tr>
           <td>Beef Aachari / Kala Bhuna</td>
         </tr>
-        <tr>
+     <tr>
           <td>Vegetable Malai Curry</td>
         </tr>
-        <tr>
+     <tr>
           <td>Jorda / Firni / Borhani</td>
         </tr>
       </tbody>
     </table>
-    <a href="#" class="btn btn-primary">
+    <a href="#" class="btn btn-success">
       ORDER NOW</a>
   </div>
 
 </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-<div class="card text-center col">
-<div class="card-header">
+<div class="card text-center p-0">
+<div class="card-header menu-head">
   <h4>Menu Twelve</h4>
   <p>min order qty: 20</p>
 </div>
@@ -500,26 +525,26 @@
   <p>per person</p>
   <table class="table">
     <tbody>
-      <tr>
+   <tr>
         <td>White Rice (Kataribhog)</td>
       </tr>
-      <tr>
+   <tr>
         <td>Chicken (Pakistani) Rezal</td>
       </tr>
-      <tr>
+   <tr>
         <td>Rui Fry / DoPiaza
         </td>
       </tr>
-      <tr>
+   <tr>
         <td>Mixed Vegetable
         </td>
       </tr>
-      <tr>
+   <tr>
         <td>Ghono Daal</td>
       </tr>
     </tbody>
   </table>
-  <a href="#" class="btn btn-primary">
+  <a href="#" class="btn btn-success">
     ORDER NOW</a>
 </div>
 
@@ -533,8 +558,8 @@
     <section>
       <div class="menu">
         <div class="m-2 row row-cols-1 g-4">
-          <div class="card text-center col">
-            <div class="card-header">
+          <div class="card text-center p-0">
+            <div class="card-header menu-head">
               <h4>Engagement Menu</h4>
               <p>min order qty: 20</p>
             </div>
@@ -546,32 +571,32 @@
     
               <table class="table">
                 <tbody>
-                  <tr>
+               <tr>
                     <td>Chicken Biryani/Morog Polao</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Mutton Rezala</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Vegetable Malai Curry</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Piece Salad</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Misti Paan</td>
                   </tr>
                 </tbody>
               </table>
-              <a href="#" class="btn btn-primary">
+              <a href="#" class="btn btn-success">
                 ORDER NOW</a>
             </div>
     
           </div>
       </div>
       <div class="m-2 row row-cols-1 g-4">
-        <div class="card text-center col">
-          <div class="card-header">
+        <div class="card text-center p-0">
+          <div class="card-header menu-head">
             <h4>GayeHolud Menu</h4>
             <p>min order qty: 20</p>
           </div>
@@ -583,31 +608,31 @@
   
             <table class="table">
               <tbody>
-                <tr>
+             <tr>
                   <td>Shorisha Bhuna Khichuri</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Beef Achari</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Begun Bhaja</td>
                 </tr>
-                <tr>
-                  <td>Two Bhortas
-                    (Chingri / Taki Mach / Loitta Shutki + Tomato / Alu / Dal / Kacha Kola)
-                    ORDER NOW</td>
+             <tr>
+                  <td>Two Bhortas <br>
+                    (Chingri / Taki Mach / Loitta Shutki + <br> Tomato / Alu / Dal / Kacha Kola)
+              </td>
                 </tr>
               </tbody>
             </table>
-            <a href="#" class="btn btn-primary">
+            <a href="#" class="btn btn-success">
               ORDER NOW</a>
           </div>
   
         </div>
     </div>
     <div class="m-2 row row-cols-1 g-4">
-      <div class="card text-center col">
-        <div class="card-header">
+      <div class="card text-center p-0">
+        <div class="card-header menu-head">
           <h4>Akdh Menu</h4>
           <p>min order qty: 20</p>
         </div>
@@ -618,32 +643,32 @@
           <p>per person</p>
           <table class="table">
             <tbody>
-              <tr>
+           <tr>
                 <td>Shahi Polao / Shahi Paratha</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Chicken Roast / Tandoori Chicken</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Beef Achari</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Rui Fish DoPiaza</td>
               </tr>
-              <tr>
+           <tr>
                 <td>Laddu</td>
               </tr>
             </tbody>
           </table>
-          <a href="#" class="btn btn-primary">
+          <a href="#" class="btn btn-success">
             ORDER NOW</a>
         </div>
 
       </div>
   </div>
   <div class="m-2 row row-cols-1 g-4">
-    <div class="card text-center col">
-      <div class="card-header">
+    <div class="card text-center p-0">
+      <div class="card-header menu-head">
         <h4>Mehedi Menu</h4>
         <p>min order qty: 20</p>
       </div>
@@ -655,30 +680,30 @@
 
         <table class="table">
           <tbody>
-            <tr>
+         <tr>
               <td>Morog Polao/Chicken Biryani
               </td>
             </tr>
-            <tr>
+         <tr>
               <td>Jali Kabab (Chicken)</td>
             </tr>
-            <tr>
+         <tr>
               <td>Firni</td>
             </tr>
-            <tr>
+         <tr>
               <td>Piece Salad</td>
             </tr>
           </tbody>
         </table>
-        <a href="#" class="btn btn-primary">
+        <a href="#" class="btn btn-success">
           ORDER NOW</a>
       </div>
 
     </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-  <div class="card text-center col">
-    <div class="card-header">
+  <div class="card text-center p-0">
+    <div class="card-header menu-head">
       <h4>AiburoBhat Menu</h4>
       <p>min order qty: 20</p>
     </div>
@@ -689,38 +714,38 @@
       <p>per person</p>
       <table class="table">
         <tbody>
-          <tr>
+       <tr>
             <td>White Rice (Kataribhog)</td>
           </tr>
-          <tr>
+       <tr>
             <td>Deshi Chicken Curry</td>
           </tr>
-          <tr>
+       <tr>
             <td>Pabda Mach Curry</td>
           </tr>
-          <tr>
+       <tr>
             <td>Seasonal) Mixed Vegetable</td>
           </tr>
-          <tr>
+       <tr>
             <td>Mach Vorta (Taki / Chingri)</td>
           </tr>
-          <tr>
+       <tr>
             <td>Ghono Daal</td>
           </tr>
-          <tr>
+       <tr>
             <td>Guti Misti</td>
           </tr>
         </tbody>
       </table>
-      <a href="#" class="btn btn-primary">
+      <a href="#" class="btn btn-success">
         ORDER NOW</a>
     </div>
 
   </div>
 </div>
 <div class="m-2 row row-cols-1 g-4">
-<div class="card text-center col">
-  <div class="card-header">
+<div class="card text-center p-0">
+  <div class="card-header menu-head">
     <h4>Grand Wedding Menu</h4>
     <p>min order qty: 20</p>
   </div>
@@ -731,27 +756,27 @@
     <p>per person</p>
     <table class="table">
       <tbody>
-        <tr>
+     <tr>
           <td>Shahi Kacchi Biryani</td>
         </tr>
-        <tr>
+     <tr>
           <td>Chicken Roast / Tandoori Chicken</td>
         </tr>
-        <tr>
+     <tr>
           <td>Jali Kabab (Beef / Chicken)</td>
         </tr>
-        <tr>
+     <tr>
           <td>Shahi Malai Jorda / Shahi Firni</td>
         </tr>
-        <tr>
+     <tr>
           <td>Aloo Bukhara Chatney</td>
         </tr>
-        <tr>
+     <tr>
           <td>Borhani</td>
         </tr>
       </tbody>
     </table>
-    <a href="#" class="btn btn-primary">
+    <a href="#" class="btn btn-success">
       ORDER NOW</a>
   </div>
 
@@ -762,8 +787,8 @@
     <section>
       <div class="menu">
         <div class="m-2 row row-cols-1 g-4">
-          <div class="card text-center col">
-            <div class="card-header">
+          <div class="card text-center p-0">
+            <div class="card-header menu-head">
               <h4>Mini Package One</h4>
               <p>min order qty: 20</p>
             </div>
@@ -775,29 +800,29 @@
     
               <table class="table">
                 <tbody>
-                  <tr>
+               <tr>
                     <td>Single Kacchi Biryani
                     </td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Boiled Egg (Fried)
                     </td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Kabab/Jorda/Firni/Borhani
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <a href="#" class="btn btn-primary">
+              <a href="#" class="btn btn-success">
                 ORDER NOW</a>
             </div>
     
           </div>
       </div>
       <div class="m-2 row row-cols-1 g-4">
-        <div class="card text-center col">
-          <div class="card-header">
+        <div class="card text-center p-0">
+          <div class="card-header menu-head">
             <h4>Mini Package Two</h4>
             <p>min order qty: 20</p>
           </div>
@@ -808,26 +833,26 @@
             <p>per person</p>
             <table class="table">
               <tbody>
-                <tr>
+             <tr>
                   <td>(Regular) Beef Tehari</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Boiled Egg (Fried)</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Kabab/Jorda/Firni/Borhani</td>
                 </tr>
               </tbody>
             </table>
-            <a href="#" class="btn btn-primary">
+            <a href="#" class="btn btn-success">
               ORDER NOW</a>
           </div>
   
         </div>
     </div>
     <div class="m-2 row row-cols-1 g-4">
-      <div class="card text-center col">
-        <div class="card-header">
+      <div class="card text-center p-0">
+        <div class="card-header menu-head">
           <h4>Mini Package Three</h4>
           <p>min order qty: 20</p>
         </div>
@@ -838,21 +863,21 @@
           <p>per person</p>
           <table class="table">
             <tbody>
-              <tr>
+           <tr>
                 <td>Morog Polao/Chicken Biryani
                 </td>
               </tr>
-              <tr>
+           <tr>
                 <td>Boiled Egg (Fried)
                 </td>
               </tr>
-              <tr>
+           <tr>
                 <td>Kabab/Jorda/Firni/Borhani
                 </td>
               </tr>
             </tbody>
           </table>
-          <a href="#" class="btn btn-primary">
+          <a href="#" class="btn btn-success">
             ORDER NOW</a>
         </div>
 
@@ -863,8 +888,8 @@
     <section>
       <div class="menu">
         <div class="m-2 row row-cols-1 g-4">
-          <div class="card text-center col">
-            <div class="card-header">
+          <div class="card text-center p-0">
+            <div class="card-header menu-head">
               <h4>Single Package One</h4>
               <p>min order qty: 20</p>
             </div>
@@ -876,25 +901,25 @@
     
               <table class="table">
                 <tbody>
-                  <tr>
+               <tr>
                     <td>(Single) Beef Tehari /
                       Beef Bhuna Khichuri</td>
                   </tr>
-                  <tr>
+               <tr>
                     <td>Jali Kabab (Chicken)
                       </td>
                   </tr>
                 </tbody>
               </table>
-              <a href="#" class="btn btn-primary">
+              <a href="#" class="btn btn-success">
                 ORDER NOW</a>
             </div>
     
           </div>
       </div>
       <div class="m-2 row row-cols-1 g-4">
-        <div class="card text-center col">
-          <div class="card-header">
+        <div class="card text-center p-0">
+          <div class="card-header menu-head">
             <h4>Single Package Two</h4>
             <p>min order qty: 20</p>
           </div>
@@ -905,25 +930,25 @@
             <p>per person</p>
             <table class="table">
               <tbody>
-                <tr>
+             <tr>
                   <td>(Single) Chicken Tehari /
                     Chicken Bhuna Khichuri</td>
                 </tr>
-                <tr>
+             <tr>
                   <td>Jali Kabab (Chicken)
                   </td>
                 </tr>
               </tbody>
             </table>
-            <a href="#" class="btn btn-primary">
+            <a href="#" class="btn btn-success">
               ORDER NOW</a>
           </div>
   
         </div>
     </div>
     <div class="m-2 row row-cols-1 g-4">
-      <div class="card text-center col">
-        <div class="card-header">
+      <div class="card text-center p-0">
+        <div class="card-header menu-head">
           <h4>Single Package Three</h4>
           <p>min order qty: 20</p>
         </div>
@@ -934,17 +959,17 @@
           <p>per person</p>
           <table class="table">
             <tbody>
-              <tr>
+           <tr>
                 <td>(Single) Morog Polao /
                   Chicken Biryani
                   </td>
               </tr>
-              <tr>
+           <tr>
                 <td>Jali Kabab (Chicken)</td>
               </tr>
             </tbody>
           </table>
-          <a href="#" class="btn btn-primary">
+          <a href="#" class="btn btn-success">
             ORDER NOW</a>
         </div>
 

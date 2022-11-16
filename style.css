@@ -1,40 +1,69 @@
 
-.mainBanner{
-    background-image: url(images/banner/banner1.png);
-    min-height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f8f7;;
 }
-.bannerTitle {
-    font-size: 60px;
+
+ /* nav */
+ nav{
+    width: 100%;
+    height: 90px;
+    font-family: alegreya,serif;
+    font-size: medium;
+   }
+   .logo{
+    font-family: "Lucida Handwriting";
+    color: rgb(4, 94, 4);
+    margin-right: 100px;
+    
+   }
+   /* background image nav */
+   .home-img{
+    background-image: url(images/banner/desh-catering-itemized-price-list-dhaka.jpg);
+   }
+   .service.img{
+    background-image: url(images/banner/banner3.png);
+   }
+   .shop-img{
+    background-image: url(images/banner/shop.png);
+   }
+    .slide-1{
+      /* background-image: url(images/banner/desh-catering-itemized-price-list-dhaka.jpg); */
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+      transition-duration: 0.3s, 0.3s, 0.3s, 0.3s;
+      transition-timing-function: ease, ease, ease, ease;
+      transition-delay: 0s, 0s, 0s, 0s;
+      transition-property: background, border, border-radius, box-shadow;
+      position: relative;
+      background-attachment: fixed;
+      
+    }
+    .bannerBlackOverlay {
+      min-height: 100vh;
+      width: 100%;
+      background: rgba(0.2, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .bannerTitle{
     font-weight: 1000;
-    color:rgb(224, 145, 41);
-}
-.bannerBlackOverlay {
-    min-height: 100vh;
-    width: 100%;
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    opacity: o.1;
-}
+      font-size: 100px;
+      color: #fff;
+      text-align: center!important;
+      position: relative;
+  }
+
 .client{
     background-color:rgb(238, 181, 106);
 }
 
-  .mt-n1 {
-    margin-top: -1.14rem;
-  }
-  .menu{
-    display: grid;
-    grid-template-columns: auto auto auto;
   
-}
 .client-block{
     height: 185px;
     width: 209px;
@@ -51,27 +80,23 @@
 /* form */
 .form-fill{
     width: 70%;
-    border: 2px solid black;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgb(53 105 128 / 30%), 0 6px 20px 0 rgb(165 200 213 / 41%);
    margin-left: 160px;
+   padding-top: 30px;
+   color: #33475b;
 }
 /* price-list */
-  .Price-menu{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-    justify-content: center;
-    margin-top: 40px;
-    
-}
+ 
 .price{
     
     width: 500px;
 
 }
 
-ul{
+/* ul{
     margin-left: 170px;
-}
+} */
 
 .img-height{
     height: 550px;
@@ -150,4 +175,4 @@ footer{
  /* margin-left: auto;
  margin-right: 30px; */
  opacity: 0.8;
-}
+} 

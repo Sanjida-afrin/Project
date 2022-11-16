@@ -176,3 +176,59 @@ footer{
  margin-right: 30px; */
  opacity: 0.8;
 } 
+/* login */
+.login{
+    max-width: 1140px;
+    margin-right: auto;
+        margin-left: auto;
+        }
+        .loginFormMainDiv {
+        display: flex;
+        justify-content: center;
+    
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .loginFormDiv {
+        flex-direction: column;
+        box-shadow: 0 1px 4px rgb(0 0 0 / 16%);
+        width: 60%;
+    }
+    .loginFormDiv, .loginFormMainDiv {
+        display: flex;
+        justify-content: center;
+    }
+    .loginForm__title {
+        text-align: center;
+        margin: 5% 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2rem;
+    
+    }
+    .loginForm {
+        padding: 0 10% 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .form-floating {
+        position: relative;
+        /* width: 400px; */
+    }
+    .registrationForm__title {
+        text-align: center;
+        margin: 5% 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .registrationForm {
+        padding: 0 10% 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }

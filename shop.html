@@ -14,19 +14,28 @@
     width: 300px;
   } */
   .food-image{
-    width: 200px;
+    width: 150px;
+    text-align: center;
   }
   .food-name{
-    width: 300px;
+    width: 500px;
   }
   .food-price{
     width: 100px;
+    text-align: center;
   }
   .food-quantity{
     width: 100px;
+    text-align: center;
   }
   .food-card{
     width: 200px;
+    text-align: center;
+  }
+  .shop-row{
+   vertical-align: middle;
+   text-align: left;
+   border-collapse: collapse;
   }
 </style>
 </head>
@@ -64,26 +73,26 @@
       </header>
       <main>
         <section>
-          <div class="d-flex  justify-content-between">
+          <div class="d-flex  justify-content-evenly m-4">
             <div class="food-list">
               <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                  The current link item
+                  RICE & BIRYANI
                 </a>
-                <div class="list-group">
+                <!-- <div class="list-group">
                   
                   <a href="#" class="list-group-item list-group-item-action ps-5">A second link item</a>
                   <a href="#" class="list-group-item list-group-item-action">A third link item</a>
                   <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
                   <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
-                </div>
-                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                </div> -->
+                <a href="#" class="list-group-item list-group-item-action">MEAT CHOICES</a>
+                <a href="#" class="list-group-item list-group-item-action">FISH CHOICES</a>
+                <a href="#" class="list-group-item list-group-item-action">VEGETABLES & VORTA</a>
                 <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
               </div>
             </div>
-            <div>
+            <div class="ms-4">
               <section>
                 <div>
                   <table class="table table-striped table-hover">
@@ -97,12 +106,27 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td class="food-image"><img src="images/private2.png" alt="" class="img-fluid"></td>
-                        <td class="food-name"></td> 
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
+                      <tr class="shop-row">
+                        <td class="food-image"><img src="images/shop/rice&biryani/rice1.png" alt="" class="img-fluid"></td>
+                        <td class="food-name">
+                          <h5>Beef Bhuna Khichuri</h5>
+                          <div class="product_description"><ul>
+                            <li>~165 gm BONELESS beef (~13 pieces)</li>
+                            <li>~142 gm Chinigura rice per person</li>
+                            <li>Add-ons: Chicken Roast / Chicken Tandoori</li>
+                         </ul>
+                        </div>
+                        </td> 
+                        <td class="food-price"> <span>৳</span> 195</td>
+                        <td class="food-quantity">
+                          <div class="quantity">
+                          
+                        <input type="number" id="quantity_637653a730796" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric" autocomplete="off">
+                          </div>
+                        </td>
+                        <td class="food-card">
+                          <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                        </td>
                       </tr>
                       <tr>
                         <td class="food-image"><img src="" alt=""></td>

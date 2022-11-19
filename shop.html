@@ -18,24 +18,57 @@
     text-align: center;
   }
   .food-name{
-    width: 500px;
+    width: 600px;
+    
+  }
+  .food-name>h5{
+    padding-left: 15px;
+    color: #021d33;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .product_description>ul>li{
+    font-size: 90%;
+    font-weight: 100;
+    line-height: 30px;
   }
   .food-price{
     width: 100px;
     text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+     
   }
   .food-quantity{
     width: 100px;
     text-align: center;
   }
   .food-card{
-    width: 200px;
+    width: 150px;
     text-align: center;
   }
   .shop-row{
    vertical-align: middle;
    text-align: left;
    border-collapse: collapse;
+  }
+  .food-head,th{
+    background-color: #e7bb64 !important;
+    color: #656f76 !important;
+    font-size: 14px;
+    border: 0px !important;
+    line-height: 1.7em;
+    font-weight: bold;
+    
+  }
+  th,td{
+   
+    border: 2px solid white;
+  }
+  .quantity,input{
+    width: 50px;
+    margin-left: 3px;
+    padding-left: 9px;
   }
 </style>
 </head>
@@ -73,129 +106,1255 @@
       </header>
       <main>
         <section>
-          <div class="d-flex  justify-content-evenly m-4">
+          <div class="d-flex  justify-content-evenly m-5">
             <div class="food-list">
               <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
                   RICE & BIRYANI
                 </a>
-                <!-- <div class="list-group">
-                  
-                  <a href="#" class="list-group-item list-group-item-action ps-5">A second link item</a>
-                  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
-                </div> -->
-                <a href="#" class="list-group-item list-group-item-action">MEAT CHOICES</a>
+                <a href="#curry" class="list-group-item list-group-item-action">MEAT CHOICES</a>
                 <a href="#" class="list-group-item list-group-item-action">FISH CHOICES</a>
                 <a href="#" class="list-group-item list-group-item-action">VEGETABLES & VORTA</a>
                 <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
               </div>
             </div>
-            <div class="ms-4">
-              <section>
-                <div>
-                  <table class="table table-striped table-hover">
-                    <thead class="text-center">
-                      <tr class=" food-head">
-                        <th class="food-image ">Images</th>
-                        <th class="food-name ">Name</th>
-                        <th class="food-price">Price</th>
-                        <th class="food-quantity">Quantity</th>
-                        <th class="food-card">Buy</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="shop-row">
-                        <td class="food-image"><img src="images/shop/rice&biryani/rice1.png" alt="" class="img-fluid"></td>
-                        <td class="food-name">
-                          <h5>Beef Bhuna Khichuri</h5>
-                          <div class="product_description"><ul>
-                            <li>~165 gm BONELESS beef (~13 pieces)</li>
-                            <li>~142 gm Chinigura rice per person</li>
-                            <li>Add-ons: Chicken Roast / Chicken Tandoori</li>
-                         </ul>
-                        </div>
-                        </td> 
-                        <td class="food-price"> <span>৳</span> 195</td>
-                        <td class="food-quantity">
-                          <div class="quantity">
-                          
-                        <input type="number" id="quantity_637653a730796" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric" autocomplete="off">
-                          </div>
-                        </td>
-                        <td class="food-card">
-                          <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                      <tr>
-                        <td class="food-image"><img src="" alt=""></td>
-                        <td class="food-name"></td>
-                        <td class="food-price"></td>
-                        <td class="food-quantity"></td>
-                        <td class="food-card"></td>
-                      </tr>
-                    </tbody>
-                  </table>
+         
+               <div>
+                <div class="ms-4" id="rice">
+                  <section>
+                    <div>
+                      <table class="table table-striped table-hover">
+                        <thead class="text-center">
+                          <tr class=" food-head">
+                            <th class="food-image ">Images</th>
+                            <th class="food-name">Name</th>
+                            <th class="food-price">Price</th>
+                            <th class="food-quantity">Quantity</th>
+                            <th class="food-card">Buy</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice1.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Beef Bhuna Khichuri</h5>
+                              <div class="product_description"><ul>
+                                <li>~165 gm BONELESS beef (~13 pieces)</li>
+                                <li>~142 gm Chinigura rice per person</li>
+                                <li>Add-ons: Chicken Roast / Chicken Tandoori</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 195</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice2.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Beef Bhuna Khichuri + Begun Bhaja + Dim Curry</h5>
+                              <div class="product_description"><ul>
+                                <li>~142 gm premium Chinigura rice + ~13 pcs (~165 gm) of beef</li>
+                                <li>Begun Bhaja: 01 pc per person</li>
+                                <li>Dim Curry: 01 pc person</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice3.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Beef Tehari</h5>
+                              <div class="product_description"><ul>
+                                <li>~165gm beef / ~13 pieces of beef </li>
+                                <li>140gm Premium Chinigura rice per person</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 195</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice4.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chicken Bhuna Khichuri</h5>
+                              <div class="product_description"><ul>
+                                <li>2pcs of 1/7 cut of ~800gm chicken</li>
+                                <li>~142gm Chinigura rice per person</li>
+                                <li>Add-on: Beef Rezala / Mutton Rezala, Chingri MalaiKari, Vegetable MalaiKari</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 175</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice5.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chicken Biryani</h5>
+                              <div class="product_description"><ul>
+                                <li>1/4 of ~850gm roast chicken</li>
+                                <li> 140gm Premium Chinigura rice per person </li>
+                                <li>01 boiled egg</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 185</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice6.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chicken Tehari</h5>
+                              <div class="product_description"><ul>
+                                <li>~142 gm premium Chinigura rice</li>
+                                <li>~8 pcs chicken per person</li>
+                                <li>Popular Add-ons: Beef Rezala / Mutton Rezala</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 175</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice7.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Kacchi + Roast + Chatney + Borhani + Jorda</h5>
+                              <div class="product_description"><ul>
+                                <li>Mutton Kacchi Biryani</li>
+                                <li>Chicken Roast (Pakistani)</li>
+                                <li>Aloo Bukhara Chatney</li>
+                                <li>Borhani</li>
+                                <li>Jorda</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 565</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice8.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Kacchi + Roast + Kabab + Firni</h5>
+                              <div class="product_description"><ul>
+                                <li>Mutton Kacchi Biryani</li>
+                                <li>Chicken Roast</li>
+                                <li>Jali Kabab: Beef / Chicken</li>
+                                <li>Firni</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 555</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice9.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Mini Package Three</h5>
+                              <div class="product_description"><ul>
+                                <li>Morog Polao/Chicken Biryani</li>
+                                <li>Boiled Egg (Fried)</li>
+                                <li>Kabab/Jorda/Firni/Borhani</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>260</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice10.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Morog Polao</h5>
+                              <div class="product_description"><ul>
+                                <li>140gm Premium Chinigura rice per person </li>
+                                <li>1/4 of ~800gm roast chicken</li>
+                                <li>01 boiled egg (fried)</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 185</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice11.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Morog Polao + Jali Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>Morog Polao: 140 gm premium Chinigura rice</li>
+                                <li>1/4 Roast Chicken+01 pc boiled egg </li>
+                                <li>01 pc boiled egg </li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>230</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice12.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Mutton Kacchi Biryani</h5>
+                              <div class="product_description"><ul>
+                                <li>125 gm premium Chinigura rice per person</li>
+                                <li>~ 250 gm mutton (2 pieces – 125 gm each) </li>
+                                <li>1 big piece of potato</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>350</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice13.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Peas Polao</h5>
+                              <div class="product_description"><ul>
+                                <li>* 140gm Premium Chinigura rice per person (One KG rice for 7 persons)</li>
+                               
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>80</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice14.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Peas Polao, Chicken Roast, Jali Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>140 gm Premium Chinigura Rice</li>
+                                <li>1/4 of Roast chicken (Cock / Sonali)</li>
+                                <li>Jali Kabab (Chicken / Beef – 1 pc)</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice15.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Plain Bhuna Khichuri</h5>
+                              <div class="product_description"><ul>
+                                <li>~142 gm Chinigura rice </li>
+                                <li>Add-ons: Beef Rezala / Mutton Rezala, Chicken Korma, Vegetable MalaiKari</li>
+                               
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>65</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice16.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Plain Polao</h5>
+                              <div class="product_description"><ul>
+                                <li>140gm Premium Chinigura rice per person (One kg rice for 7 persons)</li>
+                               
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>70</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice17.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Shahi Basmati Mutton Kacchi Biryani</h5>
+                              <div class="product_description"><ul>
+                                <li>140 gm premium Basmati rice</li>
+                                <li>2 pcs (~125 gm each) mutton </li>
+                                <li>01 pc Aloo</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 375</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice18.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Shahi Polao</h5>
+                              <div class="product_description"><ul>
+                                <li> 140gm Premium Chinigura rice per person (One kg rice for 7 persons)</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>80</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice19.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Shahi Polao + Chicken Roast + Jali Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>Shahi Polao: 140 gm premium Chinigura rice</li>
+                                <li>1/4 of ~850 gm Roast Chicken </li>
+                                <li>Jali Kabab: Beef / Chicken</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice20.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Polao + Chicken Roast + Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>~140 gm premium Chinigura rice</li>
+                                <li>1/4 of ~850 gm Pakistani roast chicken</li>
+                                <li>Jali Kabab: Beef / Chicken</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice21.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Special Beef Tehari + Chicken Roast + Jali Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>Special (Meaty) Beef Tehari: Beef to Rice ratio is 2kg:1kg</li>
+                                <li> 1/4 of 850 gm Pakistani Roast Chicken. Gravy and Juicy</li>
+                                <li>Jali Kabab (Beef or Chicken)</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>410</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice22.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Special Morog Polao</h5>
+                              <div class="product_description"><ul>
+                                <li>~142 gm premium Chinigura Rice</li>
+                                <li>2 pcs of ~800gm roast chicken (Pakistani)</li>
+                                <li>01 pc boiled egg (fried)</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>270</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice23.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Special Mutton Tehari</h5>
+                              <div class="product_description"><ul>
+                                <li>~142 gm premium Chinigura rice per person (i.e. 1 kg rice for 7 persons; good enough for an adult)</li>
+                                <li>250 gm (~10 pcs) of mutto</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>340</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice24.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >White Rice</h5>
+                              <div class="product_description"><ul>
+                                <li>142 gm premium KatariBhog rice per person</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>50</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice25.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >White Rice + Shorshe Ilish + Mixed Vegetable + Beef Vuna + Dal</h5>
+                              <div class="product_description"><ul>
+                                <li>White Rice: 142 gm Katarivog rice</li>
+                                <li>Shorshe Ilish: 1:7 of 1kg Ilish</li>
+                                <li>Mixed Vegetables: 5-6 seasonal vegetables</li>
+                                <li>Beef Vuna: 4-5 pcs of bone-in beef</li>
+                                <li>Regular Dal</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>590</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice26.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >White Rice Basmati</h5>
+                              <div class="product_description"><ul>
+                                <li>165gm Basmati rice per person</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>60</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
                 </div>
-              </section>
-            </div>
+                <div class="ms-4" id="curry">
+                  <section>
+                    <div>
+                      <table class="table table-striped table-hover">
+                        <thead class="text-center">
+                          <tr class=" food-head">
+                            <th class="food-image">Images</th>
+                            <th class="food-name">Name</th>
+                            <th class="food-price">Price</th>
+                            <th class="food-quantity">Quantity</th>
+                            <th class="food-card">Buy</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry1.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Whole Chicken Roast</h5>
+                              <div class="product_description"><ul>
+                                <li>~1kg Roast Chicken (Pakistani)</li>
+                                <li>Good for the bridal dish</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>600</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry2.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chicken Tandoori</h5>
+                              <div class="product_description"><ul>
+            
+                                <li>1 pcs of 1/4 cut of 1.5 kg broiler chicken</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>120</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry3.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chicken Roast</h5>
+                              <div class="product_description"><ul>
+                                <li>1/4 of ~800 gm Roast chicken (Pakistani Cock – white / sonali)</li>
+                                <li>Pakistani Cock (White / Sonali) – 120 tk</li>
+                                <li>Deshi Chicken – 150 tk per piece</li>
+                                <li>Broiler Chicken – 100 tk per piece</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 120</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry4.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chicken Rezala</h5>
+                              <div class="product_description"><ul>
+                                <li>2 pcs of 1/8 cut of 1kg Pakistani chicken</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 130</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry5.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chicken Korma</h5>
+                              <div class="product_description"><ul>
+                                <li>2 pcs of 1:7 cut of ~850gm Pakistani Chicken (Cock / Sonali)</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 145</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry6.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Beef Kala Bhuna</h5>
+                              <div class="product_description"><ul>
+                                <li>~165gm (4-5 pcs Bone-in) beef per person</li>
+                                <li>~165gm (4-5 pcs BONELESS) beef per person  210 Taka</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 175</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry7.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Beef Rezala</h5>
+                              <div class="product_description"><ul>
+                                <li>~165gm (4-5 pcs Bone-in) beef per person</li>
+                                <li>~165gm (4-5 pcs BONELESS) beef per person 210 Taka </li>
+                            
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 175</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry8.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Beef Liver Vuna</h5>
+                              <div class="product_description"><ul>
+                                <li>Standard sized 4-5 pcs of Beef Liver per person</li>
+                                <li>Best with Polao, Shahi Paratha, and White Rice menu</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>165</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry9.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Duck Meat Bhuna</h5>
+                              <div class="product_description"><ul>
+                                <li>per person 2pcs of 1/10 cut of ~1.25kg duck</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>150</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry10.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Mutton Bhuna</h5>
+                              <div class="product_description"><ul>
+                                <li>142 gm (3-4 pcs) mutton per person </li>
+                                <li>Best with Polao, Khichuri, etc</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 195</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry11.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Mutton Rezala</h5>
+                              <div class="product_description"><ul>
+                                <li>~140gm (3 pcs) mutton per person</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>195</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry12.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chingri DoPiaza</h5>
+                              <div class="product_description"><ul>
+                                <li>(Prawn) Chingri DoPiaza</li>
+                                <li>Size: 1 kg = ~ 20 pieces</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>175</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry12.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chingri DoPiaza</h5>
+                              <div class="product_description"><ul>
+                                <li>(Prawn) Chingri DoPiaza</li>
+                                <li>Size: 1 kg = ~10 pieces</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>275</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry12.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chingri DoPiaza</h5>
+                              <div class="product_description"><ul>
+                                <li>(Prawn) Chingri DoPiaza</li>
+                                <li>Size: 1 kg = ~ 20 pieces</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>175</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry12.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chingri DoPiaza</h5>
+                              <div class="product_description"><ul>
+                                <li>(Prawn) Chingri DoPiaza</li>
+                                <li>Size: 1 kg = ~ 20 pieces</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>175</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice13.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Peas Polao</h5>
+                              <div class="product_description"><ul>
+                                <li>* 140gm Premium Chinigura rice per person (One KG rice for 7 persons)</li>
+                               
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>80</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice14.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Peas Polao, Chicken Roast, Jali Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>140 gm Premium Chinigura Rice</li>
+                                <li>1/4 of Roast chicken (Cock / Sonali)</li>
+                                <li>Jali Kabab (Chicken / Beef – 1 pc)</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice15.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Plain Bhuna Khichuri</h5>
+                              <div class="product_description"><ul>
+                                <li>~142 gm Chinigura rice </li>
+                                <li>Add-ons: Beef Rezala / Mutton Rezala, Chicken Korma, Vegetable MalaiKari</li>
+                               
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>65</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice16.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Plain Polao</h5>
+                              <div class="product_description"><ul>
+                                <li>140gm Premium Chinigura rice per person (One kg rice for 7 persons)</li>
+                               
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>70</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice17.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Shahi Basmati Mutton Kacchi Biryani</h5>
+                              <div class="product_description"><ul>
+                                <li>140 gm premium Basmati rice</li>
+                                <li>2 pcs (~125 gm each) mutton </li>
+                                <li>01 pc Aloo</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 375</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice18.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Shahi Polao</h5>
+                              <div class="product_description"><ul>
+                                <li> 140gm Premium Chinigura rice per person (One kg rice for 7 persons)</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>80</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice19.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Shahi Polao + Chicken Roast + Jali Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>Shahi Polao: 140 gm premium Chinigura rice</li>
+                                <li>1/4 of ~850 gm Roast Chicken </li>
+                                <li>Jali Kabab: Beef / Chicken</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice20.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Polao + Chicken Roast + Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>~140 gm premium Chinigura rice</li>
+                                <li>1/4 of ~850 gm Pakistani roast chicken</li>
+                                <li>Jali Kabab: Beef / Chicken</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice21.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Special Beef Tehari + Chicken Roast + Jali Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>Special (Meaty) Beef Tehari: Beef to Rice ratio is 2kg:1kg</li>
+                                <li> 1/4 of 850 gm Pakistani Roast Chicken. Gravy and Juicy</li>
+                                <li>Jali Kabab (Beef or Chicken)</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>410</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice22.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Special Morog Polao</h5>
+                              <div class="product_description"><ul>
+                                <li>~142 gm premium Chinigura Rice</li>
+                                <li>2 pcs of ~800gm roast chicken (Pakistani)</li>
+                                <li>01 pc boiled egg (fried)</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>270</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice23.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Special Mutton Tehari</h5>
+                              <div class="product_description"><ul>
+                                <li>~142 gm premium Chinigura rice per person (i.e. 1 kg rice for 7 persons; good enough for an adult)</li>
+                                <li>250 gm (~10 pcs) of mutto</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>340</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice24.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >White Rice</h5>
+                              <div class="product_description"><ul>
+                                <li>142 gm premium KatariBhog rice per person</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>50</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice25.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >White Rice + Shorshe Ilish + Mixed Vegetable + Beef Vuna + Dal</h5>
+                              <div class="product_description"><ul>
+                                <li>White Rice: 142 gm Katarivog rice</li>
+                                <li>Shorshe Ilish: 1:7 of 1kg Ilish</li>
+                                <li>Mixed Vegetables: 5-6 seasonal vegetables</li>
+                                <li>Beef Vuna: 4-5 pcs of bone-in beef</li>
+                                <li>Regular Dal</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>590</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/rice&biryani/rice26.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >White Rice Basmati</h5>
+                              <div class="product_description"><ul>
+                                <li>165gm Basmati rice per person</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>60</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </div>
+               </div>
+            
           </div>
         </section>
       </main>

@@ -61,20 +61,23 @@ body {
 
 .client{
     background-color:rgb(238, 181, 106);
+    padding: 30px;
 }
 
   
 .client-block{
-    height: 185px;
-    width: 209px;
-    background-color: rgb(55, 59, 52);
+    height: 200px;
+    width: 240px;
+    background-color: rgba(58,58,58,.7803921568627451);
     display: inline-block;
-    margin: 5px;
+    margin: 7px;
+    border-radius: 6px;
 }
 .client-block img{
     width: 160px;
     height: 120px;
-    margin-top: 32px;
+  margin-top: 40px;
+    
 
 }
 /* form */
@@ -102,8 +105,11 @@ body {
     height: 550px;
 }
 footer{
-    background-color: rgb(62, 62, 62);
+    background-color: #54595f;
     color: white;
+    height: 350px;
+    align-self: center;
+    padding: 50px;
 }
 /* service */
 .Private{

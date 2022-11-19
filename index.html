@@ -13,40 +13,111 @@
 <style>
 
  /* nav */
+.pri-cate{
+    position: relative;
+      height: 100%;
+      width: 100%;
+      background: rgba(79, 79, 79, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+.pri-cate>div{
+  font-weight: 1000;
+      font-size: 10px;
+      color: #fff;
+      text-align: center!important;
+      position: relative;
+}
+.bannerBtn{
+  background-color: #08af57;
+    padding: 20px 40px;
+margin-bottom: 20px;
+font-size: 20px;
+    font-weight: 600;
+}
+.cate-name{
+  color: #f4cd78;
+    font-family: alegreya sans,Sans-serif;
+    font-size: 58px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: .5px;
+    margin-top: 200px;
+}
+.cate-name2{
+  
+  color: #fff;
+    font-family: alegreya sans sc,Sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: oblique;
+    line-height: 1.2em;
+    letter-spacing: 2.9px;
+margin-top: 50px;
 
-
+}
+.card-img-overlay>h3{
+  color: #ffce42;
+    font-family: open sans,Sans-serif;
+    font-size: 50px;
+    font-weight: 550;
+}
+.card-img-overlay>p{
+  text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
  .home-container{
   margin-top: 40px;
+  text-align: center;
  }
- .home-container>h2{
+ .home-container>div>h2{
   padding: 40px;
   font-size: 2.5em;
     font-weight: 700;
     font-family: alegreya,serif;
  }
   .service{
-    width: 555px;
-   height: 450px;
-   color: white;
-   font-size: 1.5em;
-    font-weight: 400;
-  }
-  .service>img{
-    opacity: 0.9;
-    
-  }
-  .service>div{
-    padding: 60px 60px 20px 20px;
-  }
-  .service>div>h5{
-    font-family: open sans,Sans-serif;
-    font-size: 38px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    width: 600px;
+   height: 610px;
+    background-image: url(https://www.deshcatering.com/wp-content/uploads/2020/03/social-events-desh-catering-provider.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  position: relative;
   }
   .feature{
-    margin-left: 50px;
-    margin-right: 50px;
+   margin: 40px;
+  }
+  .card-title{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .card-text{
+    color: #54595f;
+    font-size: 18px;
+  }
+  .footer-head>h2{
+    color: #fff;
+    font-family: alegreya sans sc,Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+  .footer-head>p{
+    font-family: open sans,Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
   }
 </style>
 <body>
@@ -74,42 +145,52 @@
     <div class="slide-1 home-img">
       <div class="bannerBlackOverlay">
           <div class="bannerTitle">
-            <h2 class=" text-center">BEST QUALITY PRODUCTS</h2>
-            <p class="my-3"><a href="form.html"><button type="button" class="btn btn-warning bannerBtn"> REQUEST FOR QUOTATION</button></a></p>
+            <h1 class="text-center cate-name">SANJIDA'S CATERING</h1>
+            <h2 class=" text-center cate-name2">
+              FULL SERVICE CATERING HOUSE <br>
+              FOR ALL YOUR CATERING NEEDS</h2>
+            <p class="my-3"><a href="form.html"><button type="button" class="btn btn-success bannerBtn"> REQUEST FOR QUOTATION</button></a></p>
           </div>
       </div>
   </div>
   </header>
   <main>
     <section  class="home-container">
+      <div class="footer-head">
       <h2 class="elementor-heading-title elementor-size-default text-center">OUR SERVICES</h2>
       </div>
-      <div class="sewrvices d-flex row-cols-2 justify-content-evenly mx-5">
-        <div class="card text-center col service ">
-          <img src="images/social-events-desh-catering-provider.jpg" class="card-img" alt="..." style="height: 450px;">
+      <div class=" d-flex row-cols-2 gap-5 align-items-center mx-5 justify-content-between">
+       
+        <div class="card text-center col service ms-5">
+          <div class="pri-cate">
           <div class="card-img-overlay">
-            <h5 class="card-title text-warning">Private Catering</h5>
+            <h3 class="card-title text-warning">Private Catering</h3>
             <p class="card-text">Life is full of occasions and celebrations. Scrumptious food makes these events long-lasting. YES, we proudly deliver super delicious food and fabulous service.</p>
-            <p class="my-3"><a href="/products"><button type="button" class="btn btn-success bannerBtn"> Know More</button></a></p>
+            <p class="my-3"><a href="Services.html"><button type="button" class="btn btn-success bannerBtn"> Know More</button></a></p>
           
           </div>
+       </div>
         </div>
-        <div class="card text-center col service">
-          <img src="images/corporate.png" class="card-img" alt="..." style="height: 450px;">
+        <div class="card text-center col service me-5">
+          
+         <div class="pri-cate">
           <div class="card-img-overlay">
-            <h5 class="card-title text-warning">Corporate Catering</h5>
+            <h3 class="card-title text-warning">Corporate Catering</h3>
             <p class="card-text">From made-to-order foods to flawless service, we are the expert in making your next corporate event – small or large – a delicious success.</p>
-              <p class="my-3"><a href="/products"><button type="button" class="btn btn-success bannerBtn"> Know More</button></a></p>
+              <p class=""><a href="Services.html"><button type="button" class="btn btn-success bannerBtn"> Know More</button></a></p>
           </div>
+         </div>
         </div>
       </div>
     </section>
     <section class="home-container">
-      <h2 class="text-center">OUR FEATURES</h2>
-      <hr>
-      <h4>We Care For You</h4>
-      <div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 feature">
+      <div style="margin-top: 70px ;">
+        <h2 class="p-0">OUR FEATURES</h2>
+      <div style="height:3px;width:290px; background-color: #ffce42;margin-left: 560px;"></div>
+      <h4 class="mt-3">We Care For You</h4>
+      </div>
+      <div class="footer-head">
+        <div class="row row-cols-1 row-cols-md-3 g-4 feature ">
           <div class="col">
             <div class="card">
               <img src="images/features/feature1.png" class="card-img-top p-4" alt="...">
@@ -167,11 +248,13 @@
         </div>
       </div>
     </section>
-    <section class="client text-center">
-      <h2>OUR CLIENTS</h2>
-      <hr>
-      <h4>The list is growing rapidly. Next is yours?</h4>
-      <div>
+    <section class="client text-center home-container">
+     <div class="footer-head">
+      <h2 class="pb-0">OUR CLIENTS</h2>
+      <div style="height:3px;width:260px; background-color: green;margin-left: 538px;"></div>
+      <h4 class="mt-3">The list is growing rapidly. Next is yours?</h4>
+     </div>
+      <div class="mt-5 mb-5">
         <div class="container text-center">
           <div class="">
             <div class="client-block"><img src="images/client/batb-logo.png" alt=""></div>
@@ -185,31 +268,31 @@
     </section>
   </main>
 <footer>
-  <section class="login-container d-flex justify-content-evenly">
+  <section class="login-container d-flex justify-content-around">
 
-   <div>
+   <div class="footer-head">
     <h2>CONTACT</h2>
-    <a href="sanjidaafrin2707@gmail.com">SanjidasCatering@gmail.com</a>
+    <p><a class="text-light" href="sanjidaafrin2707@gmail.com">SanjidasCatering@gmail.com</a>
+      </p>
    </div>
-   <div>
-    <H2>IMPORTANT LINKS</H2>
-    <nav class="nav flex-column">
-      <a class="nav-link pt-0"  href="#">Shop</a>
-      <a class="nav-link pt-0" href="#">Contact Us</a>
-      <a class="nav-link pt-0" href="#">About Us</a>
-      <a class="nav-link pt-0" href="#">Order Policy</a>
-      <a class="nav-link pt-0" href="#">My Account</a>
-    </nav>
+   <div class="footer-head">
+   <h2>Address</h2>
+   <p>
+    Sanjida's Catering <br>
+ 21 Road Banani <br>
+ The Swan Centre <br>Dhaka <br>Bangladesh
+   </p>
+  </div>
+   <div class="footer-head">
+    <h2>Working Hours</h2>
+<h6>Monday to Sunday</h6>
+<h5>Working Hours : 8 am to 8 pm <br>
+<br>Delivery Hours : 8 am to 8 pm
+
+
+</h5>
    </div>
-   <div>
-    <form action="" class="login-form ">
-      <h2>MONTHLY NEWSLETTER</h2>
-      <input  class="w-100"  type="text" name="Name" placeholder="Name" id=""> <br>
-      <input  class="w-100" type="email" name="Email" placeholder="Your Email" id=""> <br>
-      <input  class="w-100" type="password" name="password" placeholder="Your Password" id=""> <br>
-      <button class="w-100 border-0"  type="submit">Login</button>
-  </form>
-   </div>
+  
 </section>
 </footer>
         

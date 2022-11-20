@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f8f7;;
@@ -22,8 +22,14 @@ body {
    .home-img{
     background-image: url(images/banner/desh-catering-itemized-price-list-dhaka.jpg);
    }
-   .service.img{
+   .service-img{
     background-image: url(images/banner/banner3.png);
+   }
+   .menu-img{
+    background-image: url(images/pic.png);
+   }
+   .price_list-img{
+    background-image: url(images/corporate.png);
    }
    .shop-img{
     background-image: url(images/banner/shop.png);
@@ -58,7 +64,23 @@ body {
       text-align: center!important;
       position: relative;
   }
-
+  .bannerBtn{
+    background-color: #08af57;
+      padding: 20px 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+      font-weight: 600;
+  }
+  .cate-name{
+    color: #f4cd78;
+      font-family: alegreya sans,Sans-serif;
+      font-size: 58px;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.3em;
+      letter-spacing: .5px;
+      margin-top: 200px;
+  }
 .client{
     background-color:rgb(238, 181, 106);
     padding: 30px;
@@ -104,6 +126,7 @@ body {
 .img-height{
     height: 550px;
 }
+/* footer */
 footer{
     background-color: #54595f;
     color: white;
@@ -111,12 +134,34 @@ footer{
     align-self: center;
     padding: 50px;
 }
+
+.footer-head>h2 {
+    color: #fff;
+    font-family: alegreya sans sc, Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+
+  .footer-head>p {
+    font-family: open sans, Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .icon>img {
+    width: 50px;
+    height: 50px;
+    justify-content: space-between;
+  }
 /* service */
 .Private{
     background-color:#F4CD78;
-    height: 350px;
+    height: 320px;
     width: 100%;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .Birthday{
@@ -176,7 +221,7 @@ footer{
 }
 .service-item{
     height: 570px;
-    width: 520px;
+    width: 610px;
     background-color: antiquewhite;  
  /* margin-left: auto;
  margin-right: 30px; */

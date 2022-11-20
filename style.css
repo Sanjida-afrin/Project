@@ -13,10 +13,10 @@ body {
     font-size: medium;
    }
    .logo{
-    font-family: "Lucida Handwriting";
-    color: rgb(4, 94, 4);
+   height: 290px;
     margin-right: 100px;
-    
+    margin-bottom: 10px;
+
    }
    /* background image nav */
    .home-img{
@@ -80,6 +80,117 @@ body {
       line-height: 1.3em;
       letter-spacing: .5px;
       margin-top: 200px;
+  }
+  /* index */
+
+  .pri-cate {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(79, 79, 79, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pri-cate>div {
+    font-weight: 1000;
+    font-size: 10px;
+    color: #fff;
+    text-align: center !important;
+    position: relative;
+  }
+
+
+  .cate-name2 {
+
+    color: #fff;
+    font-family: alegreya sans sc, Sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: oblique;
+    line-height: 1.2em;
+    letter-spacing: 2.9px;
+    margin-top: 50px;
+
+  }
+
+  .card-img-overlay>h3 {
+    color: #ffce42;
+    font-family: open sans, Sans-serif;
+    font-size: 50px;
+    font-weight: 550;
+  }
+
+  .card-img-overlay>p {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .home-container {
+    margin-top: 40px;
+    text-align: center;
+    
+  }
+
+  .home-container>div>h2 {
+    padding: 40px;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: alegreya, serif;
+  }
+
+  .service {
+    width: 600px;
+    height: 610px;
+    background-image: url(https://www.deshcatering.com/wp-content/uploads/2020/03/social-events-desh-catering-provider.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .feature {
+    margin: 40px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .card-text {
+    color: #54595f;
+    font-size: 18px;
+  }
+
+  .footer-head>h2 {
+    color: #fff;
+    font-family: alegreya sans sc, Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+
+  .footer-head>p {
+    font-family: open sans, Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .icon>img {
+    width: 50px;
+    height: 50px;
+    justify-content: space-between;
   }
 .client{
     background-color:rgb(238, 181, 106);
@@ -227,6 +338,81 @@ footer{
  margin-right: 30px; */
  opacity: 0.8;
 } 
+/* price-list */
+.Price-menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 60px;
+
+    justify-content: center;
+    margin-top: 50px;
+
+    font-family: "Montserrat", Sans-serif;
+
+}
+
+.price-head {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    color: #23A455;
+    font-family: "Alex Brush", Sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    margin-bottom: 70px;
+
+}
+
+.price-hr {
+    height: 1px;
+    width: 430px;
+    background-color: #23A455;
+    margin: 22px 0 4PX 4PX;
+
+}
+
+.price-h1 {
+    color: #23A455;
+
+    font-family: "Lucida Handwriting";
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,itela; */
+    font-size: 30px;
+}
+
+.price {
+    margin-bottom: 2px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.price>div>div>h5 {
+
+    font-size: 16px;
+    font-weight: 530;
+    color: black;
+    font-family: "Montserrat", Sans-serif;
+
+}
+
+.price>p {
+    color: #54595F;
+    width: 390px;
+    font-size: 14px;
+}
+
+.price-foot>sup>h3 {
+    font-size: 15px;
+
+}
+
+.price-foot {
+    font-size: 18px;
+}
+
+.mt-n1 {
+    margin-top: -1.14rem;
+}
+
 /* login */
 .login{
     max-width: 1140px;
@@ -283,3 +469,65 @@ footer{
         justify-content: center;
         flex-direction: column;
     }
+    /* shop */
+    .food-list>div>a{
+        margin: 2px;
+        font-weight: 600;
+      }
+      .food-image{
+        width: 150px;
+        text-align: center;
+      }
+      .food-name{
+        width: 600px;
+        
+      }
+      .food-name>h5{
+        padding-left: 15px;
+        color: #021d33;
+        font-weight: bold;
+        font-size: 100%;
+      }
+      .product_description>ul>li{
+        font-size: 90%;
+        font-weight: 100;
+        line-height: 30px;
+      }
+      .food-price{
+        width: 100px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 100%;
+         
+      }
+      .food-quantity{
+        width: 100px;
+        text-align: center;
+      }
+      .food-card{
+        width: 150px;
+        text-align: center;
+      }
+      .shop-row{
+       vertical-align: middle;
+       text-align: left;
+       border-collapse: collapse;
+      }
+      .food-head,th{
+        background-color: #e7bb64 !important;
+        color: #656f76 !important;
+        font-size: 14px;
+        border: 0px !important;
+        line-height: 1.7em;
+        font-weight: bold;
+        
+      }
+      th,td{
+       
+        border: 2px solid white;
+      }
+      .quantity,input{
+        width: 50px;
+        margin-left: 3px;
+        padding-left: 9px;
+      }

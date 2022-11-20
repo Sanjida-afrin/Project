@@ -10,139 +10,26 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-<style>
-  /* nav */
-  .pri-cate {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: rgba(79, 79, 79, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .pri-cate>div {
-    font-weight: 1000;
-    font-size: 10px;
-    color: #fff;
-    text-align: center !important;
-    position: relative;
-  }
-
-
-  .cate-name2 {
-
-    color: #fff;
-    font-family: alegreya sans sc, Sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-style: oblique;
-    line-height: 1.2em;
-    letter-spacing: 2.9px;
-    margin-top: 50px;
-
-  }
-
-  .card-img-overlay>h3 {
-    color: #ffce42;
-    font-family: open sans, Sans-serif;
-    font-size: 50px;
-    font-weight: 550;
-  }
-
-  .card-img-overlay>p {
-    text-align: center;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 1.8em;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .home-container {
-    margin-top: 40px;
-    text-align: center;
-  }
-
-  .home-container>div>h2 {
-    padding: 40px;
-    font-size: 2.5em;
-    font-weight: 700;
-    font-family: alegreya, serif;
-  }
-
-  .service {
-    width: 600px;
-    height: 610px;
-    background-image: url(https://www.deshcatering.com/wp-content/uploads/2020/03/social-events-desh-catering-provider.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .feature {
-    margin: 40px;
-  }
-
-  .card-title {
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .card-text {
-    color: #54595f;
-    font-size: 18px;
-  }
-
-  .footer-head>h2 {
-    color: #fff;
-    font-family: alegreya sans sc, Sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 25px;
-  }
-
-  .footer-head>p {
-    font-family: open sans, Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  .icon>img {
-    width: 50px;
-    height: 50px;
-    justify-content: space-between;
-  }
-</style>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
-        <button class="navbar-toggler me-5 pe-5" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler me-5 pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse nav-bar justify-content-evenly" id="navbarTogglerDemo01">
-          <a class="navbar-brand logo" href="#">Sanjida's Catering</a>
-          <ul class="navbar-nav mb-lg-0 me-5">
-            <a class="navbar-brand px-3" href="index.html">HOME</a>
-            <a class="navbar-brand px-3" href="Services.html">SERVICES</a>
-            <a class="navbar-brand px-3" href="Menus.html">MENUS</a>
-            <a class="navbar-brand px-3" href="Price_list.html">PRICE LIST</a>
-            <a class="navbar-brand px-3" href="FAQ.html">FAQ</a>
-            <a class="navbar-brand px-3" href="shop.html">SHOP</a>
-            <a href="login.html"><button class="navbar-brand btn btn-outline-success" type="submit">LOGIN</button></a>
+        <div class="collapse navbar-collapse nav-bar justify-content-between" id="navbarTogglerDemo01">
+         <img src="images/logo.png" class="logo" alt="">
+          <ul class="navbar-nav mb-lg-0 mt-1">
+              <a class="navbar-brand px-3" href="index.html">HOME</a>
+              <a class="navbar-brand px-3" href="Services.html">SERVICES</a>
+              <a class="navbar-brand px-3" href="Menus.html">MENUS</a>
+              <a class="navbar-brand px-3" href="Price_list.html">PRICE LIST</a>
+              <a class="navbar-brand px-2" href="FAQ.html">FAQ</a>
+              <a class="navbar-brand px-3" href="shop.html">SHOP</a>
+              <a href="login.html"><button class="navbar-brand btn bg-success text-light px-3" type="submit">LOGIN</button></a>
           </ul>
-
+         
         </div>
       </div>
     </nav>
@@ -161,10 +48,10 @@
   </header>
   <main>
     <section class="home-container">
-      <div class="footer-head">
+      <div class="">
         <h2 class="elementor-heading-title elementor-size-default text-center">OUR SERVICES</h2>
       </div>
-      <div class=" d-flex row-cols-2 gap-5 align-items-center mx-5 justify-content-between">
+      <div class=" d-flex row-cols-2 gap-5 align-items-center mx-5 justify-content-between me-5">
 
         <div class="card text-center col service ms-5">
           <div class="pri-cate">

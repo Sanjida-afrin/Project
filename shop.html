@@ -9,68 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-<style>
-  /* .food-list{
-    width: 300px;
-  } */
-  .food-image{
-    width: 150px;
-    text-align: center;
-  }
-  .food-name{
-    width: 600px;
-    
-  }
-  .food-name>h5{
-    padding-left: 15px;
-    color: #021d33;
-    font-weight: bold;
-    font-size: 100%;
-  }
-  .product_description>ul>li{
-    font-size: 90%;
-    font-weight: 100;
-    line-height: 30px;
-  }
-  .food-price{
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 100%;
-     
-  }
-  .food-quantity{
-    width: 100px;
-    text-align: center;
-  }
-  .food-card{
-    width: 150px;
-    text-align: center;
-  }
-  .shop-row{
-   vertical-align: middle;
-   text-align: left;
-   border-collapse: collapse;
-  }
-  .food-head,th{
-    background-color: #e7bb64 !important;
-    color: #656f76 !important;
-    font-size: 14px;
-    border: 0px !important;
-    line-height: 1.7em;
-    font-weight: bold;
-    
-  }
-  th,td{
-   
-    border: 2px solid white;
-  }
-  .quantity,input{
-    width: 50px;
-    margin-left: 3px;
-    padding-left: 9px;
-  }
-</style>
+
 </head>
 <body>
     <header>
@@ -79,16 +18,16 @@
             <button class="navbar-toggler me-5 pe-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse nav-bar justify-content-evenly" id="navbarTogglerDemo01">
-              <a class="navbar-brand logo" href="#">Sanjida's Catering</a>
-              <ul class="navbar-nav mb-lg-0 me-5">
+            <div class="collapse navbar-collapse nav-bar justify-content-between" id="navbarTogglerDemo01">
+             <img src="images/logo.png" class="logo" alt="">
+              <ul class="navbar-nav mb-lg-0 mt-1">
                   <a class="navbar-brand px-3" href="index.html">HOME</a>
                   <a class="navbar-brand px-3" href="Services.html">SERVICES</a>
                   <a class="navbar-brand px-3" href="Menus.html">MENUS</a>
                   <a class="navbar-brand px-3" href="Price_list.html">PRICE LIST</a>
-                  <a class="navbar-brand px-3" href="FAQ.html">FAQ</a>
-                  <a class="navbar-brand px-3" href="Blog.html">SHOP</a>
-                  <a href="login.html"><button class="navbar-brand btn btn-outline-success" type="submit">LOGIN</button></a>
+                  <a class="navbar-brand px-2" href="FAQ.html">FAQ</a>
+                  <a class="navbar-brand px-3" href="shop.html">SHOP</a>
+                  <a href="login.html"><button class="navbar-brand btn bg-success text-light px-3" type="submit">LOGIN</button></a>
               </ul>
              
             </div>
@@ -96,10 +35,9 @@
         </nav>
         <div class="slide-1 shop-img">
           <div class="bannerBlackOverlay">
-              <div class="bannerTitle">
-                <h2 class=" text-center">BEST QUALITY PRODUCTS</h2>
-                <p class="my-3"><a href="/products"><button type="button" class="btn btn-warning bannerBtn"> Explore
-                            All</button></a></p>
+              <div class="bannerTitle ">
+                <h2 class="text-light cate-name text-center">SHOP</h2>
+               
               </div>
           </div>
       </div>
@@ -107,20 +45,20 @@
       <main>
         <section>
           <div class="d-flex  justify-content-evenly m-5">
-            <div class="food-list">
+            <div class="food-list ">
               <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                <a href="#" class="list-group-item list-group-item-action bg-success  text-light" aria-current="true">
                   RICE & BIRYANI
                 </a>
-                <a href="#curry" class="list-group-item list-group-item-action">MEAT CHOICES</a>
-                <a href="#" class="list-group-item list-group-item-action">FISH CHOICES</a>
-                <a href="#" class="list-group-item list-group-item-action">VEGETABLES & VORTA</a>
-                <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+                <a href="#meat" class="list-group-item list-group-item-action bg-success  text-light">MEAT CHOICES</a>
+                <a href="#fish" class="list-group-item list-group-item-action bg-success  text-light">FISH CHOICES</a>
+                <a href="#vorta" class="list-group-item list-group-item-action bg-success  text-light">VEGETABLES & VORTA</a>
+                <a href="#dessert" class="list-group-item list-group-item-action bg-success  text-light">DESSERT</a>
               </div>
             </div>
          
                <div>
-                <div class="ms-4" id="rice">
+                <div class="ms-4 mb-5" id="rice">
                   <section>
                     <div>
                       <table class="table table-striped table-hover">
@@ -710,7 +648,7 @@
                     </div>
                   </section>
                 </div>
-                <div class="ms-4" id="curry">
+                <div class="ms-4 mb-5" id="meat">
                   <section>
                     <div>
                       <table class="table table-striped table-hover">
@@ -955,6 +893,28 @@
                               <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
                             </td>
                           </tr>
+                          
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </div>
+                <div class="ms-4 mb-5" id="fish">
+                  <section>
+                    <div>
+                      <table class="table table-striped table-hover">
+                        <thead class="text-center">
+                          <tr class=" food-head">
+                            <th class="food-image">Images</th>
+                            <th class="food-name">Name</th>
+                            <th class="food-price">Price</th>
+                            <th class="food-quantity">Quantity</th>
+                            <th class="food-card">Buy</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
                           <tr class="shop-row">
                             <td class="food-image"><img src="images/shop/curry/curry12.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
@@ -988,28 +948,6 @@
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>275</td>
-                            <td class="food-quantity">
-                              <div class="quantity">
-                              
-                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
-                              </div>
-                            </td>
-                            <td class="food-card">
-                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
-                            </td>
-                          </tr>
-                          <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/curry/curry12.png" alt="" class="img-fluid"></td>
-                            <td class="food-name">
-                              <h5 >Chingri DoPiaza</h5>
-                              <div class="product_description"><ul>
-                                <li>(Prawn) Chingri DoPiaza</li>
-                                <li>Size: 1 kg = ~ 20 pieces</li>
-                                
-                             </ul>
-                            </div>
-                            </td> 
                             <td class="food-price"> <span>৳</span>175</td>
                             <td class="food-quantity">
                               <div class="quantity">
@@ -1027,51 +965,8 @@
                               <h5 >Chingri DoPiaza</h5>
                               <div class="product_description"><ul>
                                 <li>(Prawn) Chingri DoPiaza</li>
-                                <li>Size: 1 kg = ~ 20 pieces</li>
+                                <li>Size: 1 kg = ~8 pieces</li>
                                 
-                             </ul>
-                            </div>
-                            </td> 
-                            <td class="food-price"> <span>৳</span>175</td>
-                            <td class="food-quantity">
-                              <div class="quantity">
-                              
-                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
-                              </div>
-                            </td>
-                            <td class="food-card">
-                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
-                            </td>
-                          </tr>
-                          <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice13.png" alt="" class="img-fluid"></td>
-                            <td class="food-name">
-                              <h5 >Peas Polao</h5>
-                              <div class="product_description"><ul>
-                                <li>* 140gm Premium Chinigura rice per person (One KG rice for 7 persons)</li>
-                               
-                             </ul>
-                            </div>
-                            </td> 
-                            <td class="food-price"> <span>৳</span>80</td>
-                            <td class="food-quantity">
-                              <div class="quantity">
-                              
-                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
-                              </div>
-                            </td>
-                            <td class="food-card">
-                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
-                            </td>
-                          </tr>
-                          <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice14.png" alt="" class="img-fluid"></td>
-                            <td class="food-name">
-                              <h5 >Peas Polao, Chicken Roast, Jali Kabab</h5>
-                              <div class="product_description"><ul>
-                                <li>140 gm Premium Chinigura Rice</li>
-                                <li>1/4 of Roast chicken (Cock / Sonali)</li>
-                                <li>Jali Kabab (Chicken / Beef – 1 pc)</li>
                              </ul>
                             </div>
                             </td> 
@@ -1087,17 +982,103 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice15.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry12.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >Plain Bhuna Khichuri</h5>
+                              <h5 >Chingri DoPiaza</h5>
                               <div class="product_description"><ul>
-                                <li>~142 gm Chinigura rice </li>
-                                <li>Add-ons: Beef Rezala / Mutton Rezala, Chicken Korma, Vegetable MalaiKari</li>
+                                <li>(Prawn) Chingri DoPiaza</li>
+                                <li>Size: 1 kg = ~6 pieces</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>395</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry12.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Chingri DoPiaza</h5>
+                              <div class="product_description"><ul>
+                                <li>(Prawn) Chingri DoPiaza</li>
+                                <li>Size: 1 kg = ~ 4 pieces</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>495</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry13.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Ilish Dopiaza</h5>
+                              <div class="product_description"><ul>
+                                <li>1 pc per person (1:7)</li>
+                               <li>Size of Ilish: ~1 kg</li>
+                               <li>7 standard pcs/kg – w/o head or tail</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>300</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry14.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Pabda Curry</h5>
+                              <div class="product_description"><ul>
+                                <li>2 pcs of Pabda</li>
+                                <li>Size: each ~5 inch long</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>120</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry15.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Rui Fish DoPiaza</h5>
+                              <div class="product_description"><ul>
+                                <li>Size of Rui: ~2 kg</li>
                                
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>65</td>
+                            <td class="food-price"> <span>৳</span>100</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               
@@ -1109,16 +1090,16 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice16.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry15.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >Plain Polao</h5>
+                              <h5 >Rui Fish DoPiaza</h5>
                               <div class="product_description"><ul>
-                                <li>140gm Premium Chinigura rice per person (One kg rice for 7 persons)</li>
+                                <li>Size of Rui: ~2.5 kg </li>
                                
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>70</td>
+                            <td class="food-price"> <span>৳</span>120</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               
@@ -1130,17 +1111,16 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice17.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry15.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >Shahi Basmati Mutton Kacchi Biryani</h5>
+                              <h5 >Rui Fish DoPiaza</h5>
                               <div class="product_description"><ul>
-                                <li>140 gm premium Basmati rice</li>
-                                <li>2 pcs (~125 gm each) mutton </li>
-                                <li>01 pc Aloo</li>
+                                <li>Size of Rui: 3+ kg </li>
+                               
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span> 375</td>
+                            <td class="food-price"> <span>৳</span>150</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               
@@ -1152,16 +1132,80 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice18.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry16.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >Shahi Polao</h5>
+                              <h5 >Shorshe Ilish</h5>
                               <div class="product_description"><ul>
-                                <li> 140gm Premium Chinigura rice per person (One kg rice for 7 persons)</li>
+                                <li>Ilish size: ~1kg</li>
+                               <li>No. of pieces per fish: 7 (w/o head & tail)</li>
+                              
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>295</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                        
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </div>
+                <div class="ms-4 mb-5" id="vorta">
+                  <section>
+                    <div>
+                      <table class="table table-striped table-hover">
+                        <thead class="text-center">
+                          <tr class=" food-head">
+                            <th class="food-image">Images</th>
+                            <th class="food-name">Name</th>
+                            <th class="food-price">Price</th>
+                            <th class="food-quantity">Quantity</th>
+                            <th class="food-card">Buy</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry17.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Lau Chingri</h5>
+                              <div class="product_description"><ul>
+                                <li>Standard portion per person</li>
+                                <li>2 pcs of small Chingri per person</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 65</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry18.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Mixed Vegetables</h5>
+                              <div class="product_description"><ul>
+                                <li>5+ seasonal vegetables (Cauliflower, Green Papaya, Pumpkin, Borboti, Potato, Carrot, Peas, etc.)</li>
                                 
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>80</td>
+                            <td class="food-price"> <span>৳</span>40</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               
@@ -1173,17 +1217,15 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice19.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry19.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >Shahi Polao + Chicken Roast + Jali Kabab</h5>
+                              <h5 >Vegetable Malai Curry</h5>
                               <div class="product_description"><ul>
-                                <li>Shahi Polao: 140 gm premium Chinigura rice</li>
-                                <li>1/4 of ~850 gm Roast Chicken </li>
-                                <li>Jali Kabab: Beef / Chicken</li>
+                                <li>~5 seasonal vegetables with chicken/prawn mix</li>
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-price"> <span>৳</span>60</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               
@@ -1195,17 +1237,15 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice20.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry20.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >Polao + Chicken Roast + Kabab</h5>
+                              <h5 >Aloo Vorta</h5>
                               <div class="product_description"><ul>
-                                <li>~140 gm premium Chinigura rice</li>
-                                <li>1/4 of ~850 gm Pakistani roast chicken</li>
-                                <li>Jali Kabab: Beef / Chicken</li>
+                                <li>Standard Portion Per Person</li>
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>245</td>
+                            <td class="food-price"> <span>৳</span>20</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               
@@ -1217,17 +1257,15 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice21.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry21.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >Special Beef Tehari + Chicken Roast + Jali Kabab</h5>
+                              <h5 >Begun Vorta</h5>
                               <div class="product_description"><ul>
-                                <li>Special (Meaty) Beef Tehari: Beef to Rice ratio is 2kg:1kg</li>
-                                <li> 1/4 of 850 gm Pakistani Roast Chicken. Gravy and Juicy</li>
-                                <li>Jali Kabab (Beef or Chicken)</li>
+                                <li>Standard Portion Per Person</li>
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>410</td>
+                            <td class="food-price"> <span>৳</span>20</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               
@@ -1239,56 +1277,11 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice22.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry22.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >Special Morog Polao</h5>
+                              <h5 >Chapa Shutki Bhorta</h5>
                               <div class="product_description"><ul>
-                                <li>~142 gm premium Chinigura Rice</li>
-                                <li>2 pcs of ~800gm roast chicken (Pakistani)</li>
-                                <li>01 pc boiled egg (fried)</li>
-                             </ul>
-                            </div>
-                            </td> 
-                            <td class="food-price"> <span>৳</span>270</td>
-                            <td class="food-quantity">
-                              <div class="quantity">
-                              
-                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
-                              </div>
-                            </td>
-                            <td class="food-card">
-                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
-                            </td>
-                          </tr>
-                          <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice23.png" alt="" class="img-fluid"></td>
-                            <td class="food-name">
-                              <h5 >Special Mutton Tehari</h5>
-                              <div class="product_description"><ul>
-                                <li>~142 gm premium Chinigura rice per person (i.e. 1 kg rice for 7 persons; good enough for an adult)</li>
-                                <li>250 gm (~10 pcs) of mutto</li>
-                                
-                             </ul>
-                            </div>
-                            </td> 
-                            <td class="food-price"> <span>৳</span>340</td>
-                            <td class="food-quantity">
-                              <div class="quantity">
-                              
-                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
-                              </div>
-                            </td>
-                            <td class="food-card">
-                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
-                            </td>
-                          </tr>
-                          <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice24.png" alt="" class="img-fluid"></td>
-                            <td class="food-name">
-                              <h5 >White Rice</h5>
-                              <div class="product_description"><ul>
-                                <li>142 gm premium KatariBhog rice per person</li>
-                                
+                                <li>Standard Portion Per Person</li>
                              </ul>
                             </div>
                             </td> 
@@ -1304,19 +1297,16 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice25.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry23.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >White Rice + Shorshe Ilish + Mixed Vegetable + Beef Vuna + Dal</h5>
+                              <h5 >Dal Vorta</h5>
                               <div class="product_description"><ul>
-                                <li>White Rice: 142 gm Katarivog rice</li>
-                                <li>Shorshe Ilish: 1:7 of 1kg Ilish</li>
-                                <li>Mixed Vegetables: 5-6 seasonal vegetables</li>
-                                <li>Beef Vuna: 4-5 pcs of bone-in beef</li>
-                                <li>Regular Dal</li>
+                                <li>Standard Portion Per Person</li>
+                                
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>590</td>
+                            <td class="food-price"> <span>৳</span>25</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               
@@ -1328,16 +1318,224 @@
                             </td>
                           </tr>
                           <tr class="shop-row">
-                            <td class="food-image"><img src="images/shop/rice&biryani/rice26.png" alt="" class="img-fluid"></td>
+                            <td class="food-image"><img src="images/shop/curry/curry24.png" alt="" class="img-fluid"></td>
                             <td class="food-name">
-                              <h5 >White Rice Basmati</h5>
+                              <h5 >Kola Vorta</h5>
                               <div class="product_description"><ul>
-                                <li>165gm Basmati rice per person</li>
+                                <li>Standard Portion</li>
                                 
                              </ul>
                             </div>
                             </td> 
-                            <td class="food-price"> <span>৳</span>60</td>
+                            <td class="food-price"> <span>৳</span>20</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry25.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Sheem Bhorta</h5>
+                              <div class="product_description"><ul>
+                                <li>Standard Portion Per Person</li>
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>25</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry26.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Tomato Bhorta</h5>
+                              <div class="product_description"><ul>
+                                <li>Standard Portion Per Person</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>25</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry27.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Jali Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>Chicken Jali Kabab</li>
+                              
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>40</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry28.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Jali Kabab (Beef)</h5>
+                              <div class="product_description"><ul>
+                                <li>Good quality beef and other ingredients are in adequate quantity in our Jali Kabab (Beef)</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>45</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry29.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Shami Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>Made with premium Beef / Chicken Keema</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>55</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/curry/curry26.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Tikia Kabab</h5>
+                              <div class="product_description"><ul>
+                                <li>Prepared with premium quality beef or chicken Keema</li>
+                                
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span>55</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </div>
+                <div class="ms-4" id="dessert">
+                  <section>
+                    <div>
+                      <table class="table table-striped table-hover">
+                        <thead class="text-center">
+                          <tr class=" food-head">
+                            <th class="food-image">Images</th>
+                            <th class="food-name">Name</th>
+                            <th class="food-price">Price</th>
+                            <th class="food-quantity">Quantity</th>
+                            <th class="food-card">Buy</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/dessert/dessert1.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Firni</h5>
+                              <div class="product_description"><ul>
+                                <li>Standard portion per person</li>
+                              
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 40</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/dessert/dessert 2.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Jorda</h5>
+                              <div class="product_description"><ul>
+                                <li>Standard portion per person</li>
+                              
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 40</td>
+                            <td class="food-quantity">
+                              <div class="quantity">
+                              
+                            <input type="number" id="quantity" class="input-text qty text" step="1" min="1" max="20" name="quantity" value="1" title="Qty"placeholder="" inputmode="numeric" autocomplete="off">
+                              </div>
+                            </td>
+                            <td class="food-card">
+                              <a href="login.html"><button class="navbar-brand btn btn-success text-warning p-2" type="submit">ADD TO CARD</button></a>
+                            </td>
+                          </tr>
+                          <tr class="shop-row">
+                            <td class="food-image"><img src="images/shop/dessert/dessert3.png" alt="" class="img-fluid"></td>
+                            <td class="food-name">
+                              <h5 >Borhani</h5>
+                              <div class="product_description"><ul>
+                                <li>Standard portion per person</li>
+                              
+                             </ul>
+                            </div>
+                            </td> 
+                            <td class="food-price"> <span>৳</span> 40</td>
                             <td class="food-quantity">
                               <div class="quantity">
                               

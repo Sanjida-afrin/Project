@@ -513,7 +513,7 @@ tr {
 }
 
 /* login */
-/* .login {
+.login {
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
@@ -576,7 +576,7 @@ tr {
   display: flex;
   justify-content: center;
   flex-direction: column;
-} */
+}
 
 /* shop */
 .food-list>div>a {
@@ -797,65 +797,3 @@ button:hover {
 
 
 
-
-/* extra register page  */
-
-/* .sub-container {
-  background: #E6E7E8;
-  padding: 20px;
-  border-radius: 10px;
-} */
-
-
-.signup-left,
-.signup-right {
-  border-radius: 25px;
-  background: #E5A060;
-  color: white;
-}
-
-.register h2 {
-  color: white;
-  font-size: 58px;
-}
-
-.form-item input {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 15px;
-  box-sizing: border-box;
-  border: none;
-  /* background: transparent; */
-  /* background: rgb(135, 123, 123); */
-  /* color: #df0e0e; */
-  /* border-bottom: 0px solid white; */
-}
-
-#agree-term {
-  margin-left: -160px;
-}
-
-.agree-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.agree-text {
-  margin-left: -200px;
-}
-
-.form-item i {
-  color: white;
-  font-size: 25px;
-  margin-left: 12px;
-}
-
-.btn3 {
-  margin-left: 200px;
-  color: white;
-}
-
-.signup-right img {
-  border-radius: 15px;
-}

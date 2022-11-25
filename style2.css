@@ -1,0 +1,56 @@
+/* My cart Design  */
+.my-card {
+    width: 45vw;
+    z-index: 1;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px 0px;
+    border: 6px dashed #FDCF45;
+    margin-top: 25px;
+}
+
+.my-card h3 {
+    font-size: 18px;
+}
+
+.my-card h2 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.btn-cart {
+    position: fixed;
+    top: 50vh;
+    right: 10px;
+    font-size: 2rem;
+}
+
+.btn-cart i {
+    font-size: 2rem;
+}
+
+#mycart {
+    background: #fff;
+    /* margin: 0 auto; */
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 30%;
+}
+
+.checkbtn i {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+
+.Price {
+    background: #FDCF45;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}

@@ -105,7 +105,7 @@ require "db.php";
                         </form>
                     </div>
                     <div class="signup-right col-lg-6 col-sm-6">
-                        <img src="img/reg up 2.gif" width="450px" height="400px" alt="" class="mt-5">
+                        <img src="images/reg.gif" width="550px" height="350px" alt="" class="mt-5">
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@ require "db.php";
 			$response=$mydb->insertdata($insert_query);
 		    if($response==true)
 		    {
-			    header("Location:/Twinkles-Shopping-Zone%20-%20Backup/login.php");
+			    header("Location:login.php");
 	        }
 		    else
 		    {
@@ -174,10 +174,10 @@ require "db.php";
         <?php } ?>
     </main>
     <footer>
-        <p class="text-center mt-4 copyright">@Copyright <span>Twinkles</span> Shopping Zone</p>
+        <p class="text-center mt-4 copyright">@Copyright <span>Sanjida's Catering</span></p>
     </footer>
     <!-- connecting javascript  -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>

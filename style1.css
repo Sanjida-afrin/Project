@@ -27,13 +27,14 @@
     height: 385px;
     background: #d7a473;
     color: white;
-    top: 70%;
+    top: 62%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
     border-radius: 20px;
+  margin-bottom: ;
 }
 
 .pic {
@@ -131,12 +132,13 @@ button:hover {
     font-size: 58px;
 }
 
-.form-item input {
+.form-item> input {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 15px;
     box-sizing: border-box;
     border: none;
+    background-color: black;
     /* background: transparent; */
     /* background: rgb(135, 123, 123); */
     /* color: #df0e0e; */
@@ -170,6 +172,8 @@ button:hover {
 
 .signup-right img {
     border-radius: 15px;
+    padding-bottom: 10px;
+   padding-right: 10px;
 }
 
 
@@ -203,7 +207,7 @@ button:hover {
 
 nav {
     width: 100%;
-    height: 60px;
+    height: 80px;
     font-family: alegreya, serif;
     font-size: medium;
   }

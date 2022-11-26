@@ -174,7 +174,11 @@ require "db.php";
         <?php } ?>
     </main>
     <footer>
-        <p class="text-center mt-4 copyright">@Copyright <span>Sanjida's Catering</span></p>
+        <p class="text-center copyright" style="margin-top: 100px;">@Copyright <span
+                class=" text-success">Sanjida's</span>
+            Catering
+            Service
+        </p>
     </footer>
     <!-- connecting javascript  -->
     <!-- <script src="script.js"></script> -->

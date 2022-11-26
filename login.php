@@ -132,7 +132,8 @@ require "db.php";
 
     </main>
     <footer>
-        <p class="text-center mt-4 copyright">@Copyright <span>Twinkles</span> Shopping Zone</p>
+        <p class="text-center mt-5 copyright">@Copyright <span class="text-success">Sanjida's</span> Catering Service
+        </p>
     </footer>
 
 </body>

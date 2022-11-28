@@ -9,12 +9,32 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <style>
+@media screen and (max-width: 968px) {
+  nav{
+    height: 100px;
+  }
+  .nav-bar>img{
+    display: none;
+  }
+  .navbar-toggler-icon{
+    margin-top: 0px;
+    height: 100px;
+    width: 50px;
+
+  }
+  .navbar-nav>a{
+    background-color: white;
+  }
+}
+  </style>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
+        
         <button class="navbar-toggler me-5 pe-5" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
           aria-label="Toggle navigation">
